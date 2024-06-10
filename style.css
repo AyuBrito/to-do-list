@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container-main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#06576e, rgb(9, 26, 35));
+  padding: 10px;
+}
+
+.main h2 {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main {
+  width: 100%;
+  max-width: 540px;
+  background: #ffffff;
+  margin: 100px auto 20px;
+  padding: 20px 30px 70px;
+  border-radius: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #dcdcdc;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 40px;
+  color: #fff;
+  background: #2b869c;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(To-Do-Img/images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(To-Do-Img/images/checked.png);
+}
+
+ul li.checked .delete-button {
+  text-decoration: none;
+}
+
+.delete-button {
+  padding: 6px 10px;
+  background-color: rgb(222, 33, 33);
+  border: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}

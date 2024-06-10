@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container-main">
+      <div id="todo-main" class="main">
+        <h2>To Do List</h2>
+        <div class="row">
+          <form onsubmit="postData(event)">
+            <input
+              type="text"
+              id="input-list"
+              placeholder="What needs to be done?"
+            />
+            <button type="submit" id="botao-add">add</button>
+          </form>
+        </div>
+        <ul id="list-ul" class="to-do-list"></ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
